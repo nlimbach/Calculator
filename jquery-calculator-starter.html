@@ -83,99 +83,139 @@ $(document).ready(function(){
 
     //set first Number
 
-
+    var secondNumber = "";
     var firstNumber="";
     var operator ="";
 
+    var printFirstNumber = $("#first-number");
+    var printOperator= $("#operator");
+    var printResult = $("#first-number");
+    var printSecondNumber = $("#second-number");
 
-    $("#button-1").on ("click", function() {
-        firstNumber = firstNumber + $("#button-1").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-2").on ("click", function() {
-        firstNumber = firstNumber + $("#button-2").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-3").on ("click", function() {
-        firstNumber = firstNumber + $("#button-3").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-4").on ("click", function() {
-        firstNumber = firstNumber + $("#button-4").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-5").on ("click", function() {
-        firstNumber = firstNumber + $("#button-5").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-6").on ("click", function() {
-        firstNumber = firstNumber + $("#button-6").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-7").on ("click", function() {
-        firstNumber = firstNumber + $("#button-7").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-8").on ("click", function() {
-        firstNumber = firstNumber + $("#button-8").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-    $("#button-9").on ("click", function() {
-        firstNumber = firstNumber + $("#button-9").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
+    if(operator ==""){
+        $("#button-1").on ("click", function() {
+            firstNumber = firstNumber + $("#button-1").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-2").on ("click", function() {
+            firstNumber = firstNumber + $("#button-2").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-3").on ("click", function() {
+            firstNumber = firstNumber + $("#button-3").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-4").on ("click", function() {
+            firstNumber = firstNumber + $("#button-4").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-5").on ("click", function() {
+            firstNumber = firstNumber + $("#button-5").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-6").on ("click", function() {
+            firstNumber = firstNumber + $("#button-6").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-7").on ("click", function() {
+            firstNumber = firstNumber + $("#button-7").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-8").on ("click", function() {
+            firstNumber = firstNumber + $("#button-8").text();
+            printFirstNumber.text(firstNumber);
+        })
+        $("#button-9").on ("click", function() {
+            firstNumber = firstNumber + $("#button-9").text();
+            printFirstNumber.text(firstNumber);
+        })
 
-    $("#button-0").on ("click", function() {
-        firstNumber = firstNumber + $("#button-0").text();
-        var printResult = $("#first-number");
-        printResult.text(firstNumber);
-    })
-
+        $("#button-0").on ("click", function() {
+            firstNumber = firstNumber + $("#button-0").text();
+            printFirstNumber.text(firstNumber);
+        })
+    }
     //set Operators 
 
     $("#button-plus").on ("click", function() {
         operator = $("#button-plus").text();
-        var printOperator= $("#operator");
         printOperator.text(operator);
     })
 
-    $("#button-plus").on ("click", function() {
-        operator = $("#button-plus").text();
-        var printOperator= $("#operator");
+    $("#button-minus").on ("click", function() {
+        operator = $("#button-minus").text();
         printOperator.text(operator);
     })
 
-    $("#button-plus").on ("click", function() {
-        operator = $("#button-plus").text();
-        var printOperator= $("#operator");
+    $("#button-divide").on ("click", function() {
+        operator = $("#button-divide").text();
         printOperator.text(operator);
     })
 
-    $("#button-plus").on ("click", function() {
-        operator = $("#button-plus").text();
-        var printOperator= $("#operator");
+    $("#button-multiply").on ("click", function() {
+        operator = $("#button-multiply").text();
         printOperator.text(operator);
     })
 
-    $("#button-plus").on ("click", function() {
-        operator = $("#button-plus").text();
-        var printOperator= $("#operator");
+    $("#button-power").on ("click", function() {
+        operator = $("#button-power").text();
         printOperator.text(operator);
     })
 
+    console.log(printOperator);
 
+    //do same thing with secondNumber
+    if( printOperator.text(operator) != "") {
 
-//print it to the first number result
+        $("#button-1").on("click", function () {
+            secondNumber = secondNumber + $("#button-1").text();
+            printSecondNumber.text(secondNumber);
+        })
+        $("#button-2").on("click", function () {
+            secondNumber = secondNumber + $("#button-2").text();
+            printSecondNumber.text(firstNumber);
+        })
+        $("#button-3").on("click", function () {
+            secondNumber = secondNumber + $("#button-3").text();
 
+            printSecondNumber.text(firstNumber);
+        })
+        $("#button-4").on("click", function () {
+            secondNumber = secondNumber + $("#button-4").text();
+
+            printSecondNumber.text(firstNumber);
+        })
+        $("#button-5").on("click", function () {
+            secondNumber = secondNumber + $("#button-5").text();
+
+            printSecondNumber.text(firstNumber);
+        })
+        $("#button-6").on("click", function () {
+            secondNumber = secondNumber + $("#button-6").text();
+
+            printSecondNumber.text(firstNumber);
+        })
+        $("#button-7").on("click", function () {
+            secondNumber = secondNumber + $("#button-7").text();
+
+            printSecondNumber.text(firstNumber);
+        })
+        $("#button-8").on("click", function () {
+            secondNumber = secondNumber + $("#button-8").text();
+
+            printSecondNumber.text(firstNumber);
+        })
+        $("#button-9").on("click", function () {
+            secondNumber = secondNumber + $("#button-9").text();
+
+            printSecondNumber.text(firstNumber);
+        })
+
+        $("#button-0").on("click", function () {
+            secondNumber = secondNumber + $("#button-0").text();
+            printSecondNumber.text(firstNumber);
+        })
+    }
 
 
 
